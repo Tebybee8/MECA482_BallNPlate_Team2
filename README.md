@@ -20,7 +20,7 @@ Ball N Plate Control System Design
 
 #### Table of Contents
 - [1. Introduction](#1-Introduction)
-- [2. Mathematical_Model&System Requirements] (#2-Mathematical-Model/System Requirements) 
+- [2. Mathematical_Model/System Requirements] (#2-Mathematical-Model/System-Requirements) 
 - [3. Matlab](#3-Matlab)
 - [4. Simulink](#4-Simulink) 
 - [5. CoppeliaSim Model](#5-CoppeliaSim-Model)
