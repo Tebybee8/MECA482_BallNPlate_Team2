@@ -20,7 +20,7 @@ Ball N Plate Control System Design
 
 #### Table of Contents
 - [1. Introduction](#1-Introduction)
-- [2. Mathematical Model & System Requirements] (#2-Mathematical-Model-&-System-Requirements) 
+- [2. Mathematical Model and System Requirements] (#2-Mathematical-Model-and-System-Requirements) 
 - [3. Matlab](#3-Matlab)
 - [4. Simulink](#4-Simulink) 
 - [5. CoppeliaSim Model](#5-CoppeliaSim-Model)
@@ -67,7 +67,7 @@ Using Figure 1 we can find the relationship between the servo load gear angle th
 The goal was to design a control system that allows the user to put a ball anywhere on the plate and have the servo motors 
 position the ball in the center of the plate, as well as designating a location for the system to balance the ball.
 
-## 2. Mathematical Model/System Requirements
+## 2. Mathematical Model and System Requirements
 
 Mathematical model:
 
