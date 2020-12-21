@@ -35,6 +35,9 @@ in two different angular orientations together with a ball rolling around on top
 ![image](https://user-images.githubusercontent.com/73966901/102730966-5114d680-42eb-11eb-83c6-afef2afb3c09.png)
 Figure 1: One dimensional Ball and Plate System[1]
 
+The goal of this porject was to design a control system that allows the user to put a ball anywhere on the plate and have the system
+position and balance the ball in a user defined location.
+
 Using **Fig. 1** we can find the relationship between the servo load gear angle theta(L), as well as the correlation between the beam and the angle of the servo.
  
  
@@ -63,20 +66,24 @@ Using **Fig. 1** we can find the relationship between the servo load gear angle 
  
  **Figure 5:** Equation of Linear Acceleration of the Ball and Beam System
  
- If we assume a small angle approximation in **Fig. 5** we can produce the linear equation of motion of the ball
+ 
+ After combining **Fig. 4** and **Fig. 5** we can produce the non linear equation of motion of the ball
+ 
  
  ![image](https://user-images.githubusercontent.com/73966901/102739911-3cdcd380-4303-11eb-92c6-8e4986ebc520.png)
  
  **Figure 6:** Linear Equation of Motion of the Ball
 
 
+If we then make a small angle approximation, we can then linearize this equation.
+
+
  ![image](https://user-images.githubusercontent.com/73966901/102739922-45350e80-4303-11eb-96bb-79eec8ef5819.png)
  
- **Figure 7:** Linearized Ball EOM
+ **Figure 7:** Linear Equation of Motion of the Ball 
 
- 
-The goal was to design a control system that allows the user to put a ball anywhere on the plate and have the servo motors 
-position the ball in the center of the plate, as well as designating a location for the system to balance the ball.
+
+ The equation in **Fig. 7** was used later to find the overall mathematical model of our system and assist in defining the necessary proportional and derivative gains to meet our system requirements. 
 
 ## 2. Mathematical Model and System Requirements
 
