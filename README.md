@@ -35,15 +35,17 @@ in two different angular orientations together with a ball rolling around on top
 ![image](https://user-images.githubusercontent.com/73966901/102730966-5114d680-42eb-11eb-83c6-afef2afb3c09.png)
 Figure 1: One dimensional Ball and Plate System[1]
 
-Using Figure 1 we can find the relationship between the servo load gear angle theta(L).
+Using Figure 1 we can find the relationship between the servo load gear angle theta(L), as well as the correlation between the beam and the angle of the servo.
  
  ![image](https://user-images.githubusercontent.com/73966901/102739756-d9eb3c80-4302-11eb-93e4-1777f0b536a4.png)
- Figure 2: Sine of the servo load shaft 
  
- ![image](https://user-images.githubusercontent.com/73966901/102739849-174fca00-4303-11eb-9324-a4479c42e1b7.png) 
- Figure 3: Sin 
+ Figure 2: Sine of the beam angle. 
  
- Figure 2 and Figure 3 are ustilized to obtain the equation depicted in Figure 4.
+ ![image](https://user-images.githubusercontent.com/73966901/102739849-174fca00-4303-11eb-9324-a4479c42e1b7.png)
+ 
+ Figure 3: Sine of the Beam and Servo Angle
+ 
+ ##Fig 2 and ##Fig. 3 are then used to obtain the equation depicted in Figure 4.
  
  ![image](https://user-images.githubusercontent.com/73966901/102739897-30f11180-4303-11eb-9709-94ce0838d4e6.png)
  
@@ -94,7 +96,7 @@ The equations above represent our block diagram respectively for one axis of the
 
 Figure 11: Percent Overshoot Formula
 
-![image](https://user-images.githubusercontent.com/76408602/102740280-47e43380-4304-11eb-9958-e90c07c49e35.png)
+![image](https://user-images.githubusercontent.com/76408602/102739914-3d756a00-4303-11eb-93d4-f6d4d12dca5e.png)
 
 Figure 12: Settling Time Formula
 
