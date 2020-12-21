@@ -72,11 +72,11 @@ In the overall system, the same transfer function will be implemented for the se
 Where KP is the proportional gain, Kiis the integral gain, and K is the derivative gain. This specific system is replicated by a PD controller, meaning Ki is equal to zero. 
 
 # 4. Matlab
-![image](https://user-images.githubusercontent.com/73966901/102729879-5ec85d00-42e7-11eb-88a2-0760a8229e9e.png)
+![image](https://user-images.githubusercontent.com/73966901/102730315-2b86cd80-42e9-11eb-8d13-1e664e79a659.png)
 ![image](https://user-images.githubusercontent.com/73966901/102729897-71429680-42e7-11eb-9ea3-3763e9000fb3.png)
 Figure_: Matlab Code for BallNPlate System
 
-For this system, the ball position controllers were implimented in simulink for each axis of the system, and the servo model and potential controller was utilized in coppeliasim. Matlab acted as the commuinication tool for this system, as it needed to pull information from coppeliasim, as well as feed and retrieve information to and from simulink in order for the system to work in harmony. Lines 1-6 show the remote connection to the coppeliasim model through the remote 
+For this system, the ball position controllers were implimented in simulink for each axis of the system, and the servo model and potential controller was utilized in coppeliasim. Matlab acted as the commuinication tool for this system, as it needed to pull information from coppeliasim, as well as feed and retrieve information to and from simulink in order for the system to work in harmony. Lines 1-6 show the remote connection to the coppeliasim model through remoteApi. Line 12 starts the BallPosController Simulink Model. Lines 17-26 get the object handles of the 2 servo joints, as well as the ball, before retrieving 
 
 ## 5. Simulink
 Using the proporional and derivative gains solved in section 2, A simulink model was constructed to accurately control the Ball and Plate system. This model can be seen below.
