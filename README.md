@@ -35,26 +35,27 @@ in two different angular orientations together with a ball rolling around on top
 ![image](https://user-images.githubusercontent.com/73966901/102730966-5114d680-42eb-11eb-83c6-afef2afb3c09.png)
 Figure 1: One dimensional Ball and Plate System[1]
 
-Using Figure 1 we can find the relationship between the servo load gear angle theta(L), as well as the correlation between the beam and the angle of the servo.
+Using **Fig. 1** we can find the relationship between the servo load gear angle theta(L), as well as the correlation between the beam and the angle of the servo.
  
  ![image](https://user-images.githubusercontent.com/73966901/102739756-d9eb3c80-4302-11eb-93e4-1777f0b536a4.png)
  
- Figure 2: Sine of the beam angle. 
+ **Figure 2:** Sine of the beam angle. 
  
  ![image](https://user-images.githubusercontent.com/73966901/102739849-174fca00-4303-11eb-9324-a4479c42e1b7.png)
  
- Figure 3: Sine of the Beam and Servo Angle
+ **Figure 3:** Sine of the Beam and Servo Angle
  
- ##Fig 2 and ##Fig. 3 are then used to obtain the equation depicted in Figure 4.
+ **Fig. 2** and **Fig. 3** are then used to obtain the equation depicted in **Fig. 4.**
  
  ![image](https://user-images.githubusercontent.com/73966901/102739897-30f11180-4303-11eb-9709-94ce0838d4e6.png)
  
  
- Figure 4: Relationship between the beam and servo angle.
+ **Figure 4:** Relationship between the beam and servo angle.
  
 ![image](https://user-images.githubusercontent.com/73966901/102739911-3cdcd380-4303-11eb-92c6-8e4986ebc520.png)
 
- Figure 5: Ball Equation of motion
+Assuming that the servo angle equals zero, we can 
+ **Figure 5:** Ball Equation of motion
  
  ![image](https://user-images.githubusercontent.com/73966901/102739922-45350e80-4303-11eb-96bb-79eec8ef5819.png)
 
