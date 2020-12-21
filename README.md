@@ -108,7 +108,7 @@ In the overall system, the same transfer function will be implemented for the se
 	The mathematics for our project can be described by the inherent mathematical equation relating to a PID controller. This equation is seen below. 
 ![image](https://user-images.githubusercontent.com/73966901/102729755-dea1f780-42e6-11eb-826d-b27dee8a6a38.png)
 
-Where KP is the proportional gain, Kiis the integral gain, and K is the derivative gain. This specific system is replicated by a PD controller, meaning Ki is equal to zero. 
+Where KP is the proportional gain, Ki is the integral gain, and K is the derivative gain. This specific system is replicated by a PD controller, meaning Ki is equal to zero. 
 
 
 ![image](https://user-images.githubusercontent.com/73966901/102728961-64bc3f00-42e3-11eb-9743-f7b5b8ce53a8.png)
