@@ -103,7 +103,7 @@ Figure_: CoppeliaSim Model
 
 
 ## 7. Conclusion
-Our team was very close to producing a working system, however there was one small error within our BallPosController model that we were unable to understand. The video seen in the repository shows that we were able to interact with the system and that the system responds to the location of the ball, but also demonstrates that something is wrong with the system. After displaying the information imported and exported from the simulink model, it was clear that the issue is within the controller. If time permitted we would be able to refine the controller to ensure a responsive system that facilitates the defined 
+Our team was very close to producing a working system, however there was one small error within our BallPosController model that we were unable to understand. The video seen in the repository shows that we were able to interact with the system and that the system responds to the location of the ball, but also demonstrates that something is wrong with the system. After displaying the information imported and exported from the simulink model, it was clear that the issue is within the controller. If time permitted we would be able to refine the controller to ensure a responsive system that facilitates the defined system parameters.
 
 ## 8. References
 [1] Nise, Norman S. Control Systems Engineering. Hoboken, NJ: Wiley, 2015. 
