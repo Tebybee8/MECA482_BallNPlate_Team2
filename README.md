@@ -45,7 +45,6 @@ The System Requirements of this project were defined by investigating appropriat
 
 Mathematical model:
 
-Insert Photos
 
 ![X axis](https://user-images.githubusercontent.com/76408602/102729104-1b202400-42e4-11eb-9c73-f05f5cec7f3b.png)
 
@@ -54,8 +53,6 @@ Insert Photos
 
 
 This is the block diagram corresponding to one axis of our 2 degrees of freedom ball balancer system. This specific diagram has two loops, the inner loop on the right represents the model of the servo Ps(s), and the ball balancer model. The outer loop on the left is representing the position controller S. The position controller is to be implemented in Simulink and the servo controls and ball balancer models are to be implemented into coppeliasim.
-
-Insert Equations
 
 
 ![image](https://user-images.githubusercontent.com/76408602/102729527-ed3bdf00-42e5-11eb-89cf-39afe674f531.png)
