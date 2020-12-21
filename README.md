@@ -125,20 +125,21 @@ In the overall system, the same transfer function will be implemented for the se
 
 	The mathematics for our project can be described by the inherent mathematical equation relating to a PID controller. This equation is seen below. 
 ![image](https://user-images.githubusercontent.com/73966901/102729755-dea1f780-42e6-11eb-826d-b27dee8a6a38.png)
+**Figure 14:** Inherent Mathematical Equation of a PID Controller
 
 Where KP is the proportional gain, Ki is the integral gain, and K is the derivative gain. This specific system is replicated by a PD controller, meaning Ki is equal to zero. 
 
 
 ![image](https://user-images.githubusercontent.com/73966901/102728961-64bc3f00-42e3-11eb-9743-f7b5b8ce53a8.png)
 
-**Figure 14:** Excel Spreadsheet including system requirements and dreived values.
+**Figure 15:** Excel Spreadsheet including system requirements and dreived values.
 
 The System Requirements of this project were defined by investigating appropriate parameters for this type of system. After discussing as a group, For our system, we’re using a 10% overshoot, with a 4% settling time of 5 seconds, and a Steady-State error of  7.5mm. The image above shows the excel sheet that was made to solve for our dampening ratio, natural frequency, as well as our proportional and derivative gains.
 
 ## 3. Matlab
 ![image](https://user-images.githubusercontent.com/73966901/102730315-2b86cd80-42e9-11eb-8d13-1e664e79a659.png)
 ![image](https://user-images.githubusercontent.com/73966901/102730483-cda6b580-42e9-11eb-847c-a11167338003.png)
-**Figure 14:** Matlab Code for BallNPlate System
+**Figure 16:** Matlab Code for BallNPlate System
 
 For this system, the ball position controllers were implimented in simulink for each axis of the system, and the servo model and potential controller was utilized in coppeliasim. Matlab acted as the commuinication tool for this system, as it needed to pull information from coppeliasim, as well as feed and retrieve information to and from simulink in order for the system to work in harmony. Lines 1-6 show the remote connection to the coppeliasim model through remoteApi. Line 12 starts the BallPosController Simulink Model. Lines 17-23 get the object handles of the 2 servo joints, as well as the ball, before retrieving the coordinates of the ball with the simxGetObjectPosition() function. These coordinates are then fed into the ball posiiton controller in lines 28-31. In lines 34-37, the matlab code is recieving the data from the simulink models output blocks X and Y. These new x and y values are then fed back into the coppelia sim model with the simxSetJointTargetPosition() function.
 
