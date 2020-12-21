@@ -94,7 +94,7 @@ Figure 10:
 
 The equations above represent our block diagram respectively for one axis of the 2 degree of freedom ball balancer. It follows the format of a standard second-order system therefore we can go ahead and solve for our proportional gain KP and derivative gain KD using our system parameters of percent overshoot, and settling time.
 
-![image](https://user-images.githubusercontent.com/76408602/102737449-4adb2600-42fc-11eb-9945-9ddf9cae101b.png)
+![image](https://user-images.githubusercontent.com/76408602/102739960-63027380-4303-11eb-85cb-0ae19d9d9d41.png)
 
 Figure 11: Percent Overshoot Formula
 
