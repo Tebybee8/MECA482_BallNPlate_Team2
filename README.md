@@ -2,7 +2,7 @@
 ### MECA 482 Control System Engineering Project
 ----------------------------------------------------------------------------------
 
-Ball N Plate Control System Design
+Ball on Plate Control System Design
 <p align = "center">
   Project Members:
   Travis Bybee,
