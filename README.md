@@ -32,9 +32,12 @@ Ball N Plate Control System Design
 The purpose of this project is to incorporate everything we have learned from this past semester 
 in order to create a real life example of a working control system.
 The system consists of a plate which can be tilted by two servo motors or electric motors
-in two different angular orientations together with a ball rolling around on top of the plate.
-The goal was to design a controls system that allows the user to put a ball anywhere on the plate and have the servo motors 
-position the ball in the center of the plate.
+in two different angular orientations together with a ball rolling around on top of the plate. A simple one dimensional representation of this system can be seen below.
+![image](https://user-images.githubusercontent.com/73966901/102730966-5114d680-42eb-11eb-83c6-afef2afb3c09.png)
+Figure 1: One dimensional Ball and Plate System[1]
+
+The goal was to design a control system that allows the user to put a ball anywhere on the plate and have the servo motors 
+position the ball in the center of the plate, as well as designating a location for the system to balance the ball.
 
 ## 2. System Requirements
 ![image](https://user-images.githubusercontent.com/73966901/102728961-64bc3f00-42e3-11eb-9743-f7b5b8ce53a8.png)
@@ -93,7 +96,7 @@ Figure_: CoppeliaSim Model
 
 
 ## 7. Conclusion
-
+Our team was very close to producing a working system, however there was one small error within our BallPosController model that we were unable to understand. The video seen in the repository shows that we were able to interact with the system and that the system responds to the location of the ball, but also demonstrates that something is wrong with the system. After displaying the information imported and exported from the simulink model, it was clear that the issue is within the controller. If time permitted we would be able to refine the controller to ensure a responsive system that facilitates the defined 
 
 ## 8. References
 [1] Nise, Norman S. Control Systems Engineering. Hoboken, NJ: Wiley, 2015. 
