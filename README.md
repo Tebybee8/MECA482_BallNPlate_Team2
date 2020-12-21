@@ -15,7 +15,7 @@ Ball N Plate Control System Design
    <h4> California State University Chico</h4>
    <h4> College of Mechanical and Mechatronic Engineering and Advance Manufacturing</h4> 
    <h4> MECA 482 Control System Engineering</h4> 
-   <h4> Ball N Plate</h4> 
+   <h4> Ball on Plate</h4> 
 </center>
 
 #### Table of Contents
