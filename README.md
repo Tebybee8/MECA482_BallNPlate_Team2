@@ -71,7 +71,7 @@ INSERT PHOTO
 Where KP is the proportional gain, Kiis the integral gain, and K is the derivative gain. This specific system is replicated by a PD controller, meaning Ki is equal to zero. 
 
 
-## 4. Simulink
+## 5. Simulink
 Using the proporional and derivative gains solved in section 2, A simulink model was constructed to accurately control the Ball and Plate system. This model can be seen below.
 
 ![image](https://user-images.githubusercontent.com/73966901/102729264-df398e80-42e4-11eb-9442-d4bfe9b1ba21.png)
@@ -79,17 +79,17 @@ Figure_: Simulink Model of Ball Position controller
 
 This model feeds information of the balls x and y coordinates in the coppeliasim simulation from Matlab into ConstantX and ConstantY respectively. The output blocks X and Y are then recieved in matlab to be fed into the coppeliasim model to set the new joint postions of the X and Y axis servo joints. 
 
-## 5. Coppelia Simulation
+## 6. Coppelia Simulation
 
 The Coppelia Simulation which proves that our algorithms facilitate the designated system requirements...
 
-## 6. Appendix 
+## 7. Appendix 
 
 A1:
 
 A2:
 
-## 7. References
+## 8. References
 [1] Nise, Norman S. Control Systems Engineering. Hoboken, NJ: Wiley, 2015. 
 
 
