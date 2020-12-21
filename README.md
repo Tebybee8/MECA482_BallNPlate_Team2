@@ -66,10 +66,11 @@ In the overall system, the same transfer function will be implemented for the se
 
 
 	The mathematics for our project can be described by the inherent mathematical equation relating to a PID controller. This equation is seen below. 
-INSERT PHOTO
+![image](https://user-images.githubusercontent.com/73966901/102729755-dea1f780-42e6-11eb-826d-b27dee8a6a38.png)
 
 Where KP is the proportional gain, Kiis the integral gain, and K is the derivative gain. This specific system is replicated by a PD controller, meaning Ki is equal to zero. 
 
+## 4. Matlab
 
 ## 5. Simulink
 Using the proporional and derivative gains solved in section 2, A simulink model was constructed to accurately control the Ball and Plate system. This model can be seen below.
