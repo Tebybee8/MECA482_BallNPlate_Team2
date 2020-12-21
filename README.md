@@ -24,7 +24,7 @@ Ball N Plate Control System Design
 - [3. Mathematical Model](#3-Mathematical-Model) 
 - [4. Matlab](#4-Matlab)
 - [5. Simulink](#5-Simulink) 
-- [6. CoppeliaSim Model](#6-CoppeliaSim Model)
+- [6. CoppeliaSim Model](#6-CoppeliaSim-Model)
 - [7. Conclusion](#7-Conclusion)
 - [8. References](#8-References)
 
