@@ -41,25 +41,24 @@ Using Figure 1 we can find the relationship between the servo load gear angle th
  
  Figure 2: Sine of the servo load shaft 
  
+ ![image](https://user-images.githubusercontent.com/73966901/102739849-174fca00-4303-11eb-9324-a4479c42e1b7.png)
  
- ![image](https://user-images.githubusercontent.com/76408602/102737235-b4a70000-42fb-11eb-88ee-0260151af76c.png)
  
  Figure 3: ? will revisit 
  
  Figure 2 and Figure 3 are ustilized to obtain the equation depicted in Figure 4.
  
+ ![image](https://user-images.githubusercontent.com/73966901/102739897-30f11180-4303-11eb-9709-94ce0838d4e6.png)
  
- ![image](https://user-images.githubusercontent.com/76408602/102737288-ddc79080-42fb-11eb-9178-100c3b066a95.png)
  
  Figure 4: Relationship between the beam and servo angle.
  
-
-![image](https://user-images.githubusercontent.com/76408602/102737327-fafc5f00-42fb-11eb-89e0-3e2efbd5147d.png)
+![image](https://user-images.githubusercontent.com/73966901/102739911-3cdcd380-4303-11eb-92c6-8e4986ebc520.png)
 
  Figure 5: Ball Equation of motion
  
- 
- ![image](https://user-images.githubusercontent.com/76408602/102737366-11a2b600-42fc-11eb-8bff-a7e57c4e3949.png)
+ ![image](https://user-images.githubusercontent.com/73966901/102739922-45350e80-4303-11eb-96bb-79eec8ef5819.png)
+
  
  Figure 6: Linearized Ball EOM
 
@@ -94,7 +93,6 @@ Figure 10:
 
 The equations above represent our block diagram respectively for one axis of the 2 degree of freedom ball balancer. It follows the format of a standard second-order system therefore we can go ahead and solve for our proportional gain KP and derivative gain KD using our system parameters of percent overshoot, and settling time.
 
-	
 ![image](https://user-images.githubusercontent.com/76408602/102739960-63027380-4303-11eb-85cb-0ae19d9d9d41.png)
 
 Figure 11: Percent Overshoot Formula
@@ -102,7 +100,6 @@ Figure 11: Percent Overshoot Formula
 ![image](https://user-images.githubusercontent.com/76408602/102739914-3d756a00-4303-11eb-93d4-f6d4d12dca5e.png)
 
 Figure 12: Settling Time Formula
-
 
 In the overall system, the same transfer function will be implemented for the second axis of the 2 degree of freedom ball balancer system. This is a workaround to create a MIMO system by combining multiple SISO systems. One of the diagrams will be for the X-axis, and the other will be for the Y-axis. Therefore the mathematical model for the entire system will be encompassed by both of these equations. 
 
