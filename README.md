@@ -83,7 +83,7 @@ If we then make a small angle approximation, we can then linearize this equation
  **Figure 7:** Linear Equation of Motion of the Ball 
 
 
- The equation in **Fig. 7** was used later to find the overall mathematical model of our system and assist in defining the necessary proportional and derivative gains to meet our system requirements. 
+ The equation in **Fig. 7** was used in the next section to find the overall mathematical model of our system and assist in defining the necessary proportional and derivative gains to meet our system requirements. 
 
 ## 2. Mathematical Model and System Requirements
 
