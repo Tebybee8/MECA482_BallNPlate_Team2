@@ -104,11 +104,11 @@ This is the block diagram corresponding to one axis of our two degrees of freedo
 
 ![image](https://user-images.githubusercontent.com/76408602/102729527-ed3bdf00-42e5-11eb-89cf-39afe674f531.png)
 
-**Figure 10:**  
+**Figure 10:** X-Axis Closed loop Transfer Function
 
 ![image](https://user-images.githubusercontent.com/76408602/102729539-f7f67400-42e5-11eb-8e89-4ab8fc3016d7.png)
 
-**Figure 11:**
+**Figure 11:** Y-Axis Closed loop Transfer Function
 
 The equations above represent our block diagram respectively for one axis of the 2 degree of freedom ball balancer. It follows the format of a standard second-order system therefore we can go ahead and solve for our proportional gain KP and derivative gain KD using our system parameters of percent overshoot, and settling time.
 
