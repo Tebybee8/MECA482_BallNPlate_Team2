@@ -22,10 +22,11 @@ Ball N Plate Control System Design
 - [1. Introduction](#1-Introduction)
 - [2. System Requirements](#2-System-Requirements)
 - [3. Mathematical Model](#3-Mathematical-Model) 
-- [4. Simulink](#4-Simulink) 
-- [5. Coppelia Simulation](#5-Coppelia-Simulation)
-- [6. Appendix](#6-Appendix)
-- [7. References](#7-References)
+- [4. Matlab](#4-Matlab)
+- [5. Simulink](#5-Simulink) 
+- [6. Coppelia Simulation](#6-Coppelia-Simulation)
+- [7. Appendix](#7-Appendix)
+- [8. References](#8-References)
 
 ## 1. Introduction 
 The purpose of this project is to incorporate everything we have learned from this past semester 
