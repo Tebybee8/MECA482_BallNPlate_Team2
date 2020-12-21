@@ -97,5 +97,5 @@ Figure_: CoppeliaSim Model
 
 ## 8. References
 [1] Nise, Norman S. Control Systems Engineering. Hoboken, NJ: Wiley, 2015. 
-
+[2] Quanser inc. 2 DOF Ball Balancer Woorkbook, 2013.
 
