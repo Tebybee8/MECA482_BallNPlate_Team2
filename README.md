@@ -38,6 +38,7 @@ position the ball in the center of the plate.
 
 ## 2. System Requirements
 ![image](https://user-images.githubusercontent.com/73966901/102728961-64bc3f00-42e3-11eb-9743-f7b5b8ce53a8.png)
+
 Figure 1: Excel Spreadsheet including system requirements and dreived values.
 
 The System Requirements of this project were defined by investigating appropriate parameters for this type of system. After discussing as a group, we decided to impliment our system with a 10% response overshoot, and a 5 second settling time. The image above shows the excel sheet that was made to solve for our dampening ratio, natural frequency, as well as our proportional and derivative gains.
