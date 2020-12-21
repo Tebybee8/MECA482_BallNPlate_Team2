@@ -46,7 +46,9 @@ The System Requirements of this project were defined by investigating appropriat
 Mathematical model:
 
 Insert Photos
+
 ![X axis](https://user-images.githubusercontent.com/76408602/102729104-1b202400-42e4-11eb-9c73-f05f5cec7f3b.png)
+
 ![Y axis](https://user-images.githubusercontent.com/76408602/102729117-2d9a5d80-42e4-11eb-8864-e108e4da781a.png)
 
 
@@ -56,6 +58,9 @@ This is the block diagram corresponding to one axis of our 2 degrees of freedom 
 Insert Equations
 
 
+![image](https://user-images.githubusercontent.com/76408602/102729527-ed3bdf00-42e5-11eb-89cf-39afe674f531.png)
+
+![image](https://user-images.githubusercontent.com/76408602/102729539-f7f67400-42e5-11eb-8e89-4ab8fc3016d7.png)
 
 The equations above represent our block diagram respectively for one axis of the 2 degree of freedom ball balancer. It follows the format of a standard second-order system therefore we can go ahead and solve for our proportional gain KP and derivative gain KD using our system parameters of percent overshoot, and settling time. For our system, we’re using a 10% overshoot, with a 4% settling time of 5 seconds, and a Steady-State error of  7.5mm.
 
