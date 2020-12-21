@@ -20,13 +20,12 @@ Ball N Plate Control System Design
 
 #### Table of Contents
 - [1. Introduction](#1-Introduction)
-- [2. System Requirements](#2-System-Requirements)
-- [3. Mathematical Model](#3-Mathematical-Model) 
-- [4. Matlab](#4-Matlab)
-- [5. Simulink](#5-Simulink) 
-- [6. CoppeliaSim Model](#6-CoppeliaSim-Model)
-- [7. Conclusion](#7-Conclusion)
-- [8. References](#8-References)
+- [2. Mathematical-Model/System Requirements](#2-Mathematical-Model/System Requirements) 
+- [3. Matlab](#3-Matlab)
+- [4. Simulink](#4-Simulink) 
+- [5. CoppeliaSim Model](#5-CoppeliaSim-Model)
+- [6. Conclusion](#6-Conclusion)
+- [7. References](#7-References)
 
 ## 1. Introduction 
 The purpose of this project is to incorporate everything we have learned from this past semester 
@@ -39,16 +38,7 @@ Figure 1: One dimensional Ball and Plate System[1]
 The goal was to design a control system that allows the user to put a ball anywhere on the plate and have the servo motors 
 position the ball in the center of the plate, as well as designating a location for the system to balance the ball.
 
-## 2. System Requirements
-![image](https://user-images.githubusercontent.com/73966901/102728961-64bc3f00-42e3-11eb-9743-f7b5b8ce53a8.png)
-
-Figure 1: Excel Spreadsheet including system requirements and dreived values.
-
-The System Requirements of this project were defined by investigating appropriate parameters for this type of system. After discussing as a group, we decided to impliment our system with a 10% response overshoot, and a 5 second settling time. The image above shows the excel sheet that was made to solve for our dampening ratio, natural frequency, as well as our proportional and derivative gains.
-
-
-
-## 3. Mathematical Model
+## 2. Mathematical Model/System Requirements
 
 Mathematical model:
 
@@ -73,7 +63,7 @@ Figure 3:
 
 Figure 4:
 
-The equations above represent our block diagram respectively for one axis of the 2 degree of freedom ball balancer. It follows the format of a standard second-order system therefore we can go ahead and solve for our proportional gain KP and derivative gain KD using our system parameters of percent overshoot, and settling time. For our system, we’re using a 10% overshoot, with a 4% settling time of 5 seconds, and a Steady-State error of  7.5mm.
+The equations above represent our block diagram respectively for one axis of the 2 degree of freedom ball balancer. It follows the format of a standard second-order system therefore we can go ahead and solve for our proportional gain KP and derivative gain KD using our system parameters of percent overshoot, and settling time.
 
 In the overall system, the same transfer function will be implemented for the second axis of the 2 degree of freedom ball balancer system. This is a workaround to create a MIMO system by combining multiple SISO systems. One of the diagrams will be for the X-axis, and the other will be for the Y-axis. Therefore the mathematical model for the entire system will be encompassed by both of these equations. 
 
@@ -83,14 +73,21 @@ In the overall system, the same transfer function will be implemented for the se
 
 Where KP is the proportional gain, Kiis the integral gain, and K is the derivative gain. This specific system is replicated by a PD controller, meaning Ki is equal to zero. 
 
-# 4. Matlab
+
+![image](https://user-images.githubusercontent.com/73966901/102728961-64bc3f00-42e3-11eb-9743-f7b5b8ce53a8.png)
+
+Figure 1: Excel Spreadsheet including system requirements and dreived values.
+
+The System Requirements of this project were defined by investigating appropriate parameters for this type of system. After discussing as a group, For our system, we’re using a 10% overshoot, with a 4% settling time of 5 seconds, and a Steady-State error of  7.5mm. The image above shows the excel sheet that was made to solve for our dampening ratio, natural frequency, as well as our proportional and derivative gains.
+
+## 3. Matlab
 ![image](https://user-images.githubusercontent.com/73966901/102730315-2b86cd80-42e9-11eb-8d13-1e664e79a659.png)
 ![image](https://user-images.githubusercontent.com/73966901/102730483-cda6b580-42e9-11eb-847c-a11167338003.png)
 Figure_: Matlab Code for BallNPlate System
 
 For this system, the ball position controllers were implimented in simulink for each axis of the system, and the servo model and potential controller was utilized in coppeliasim. Matlab acted as the commuinication tool for this system, as it needed to pull information from coppeliasim, as well as feed and retrieve information to and from simulink in order for the system to work in harmony. Lines 1-6 show the remote connection to the coppeliasim model through remoteApi. Line 12 starts the BallPosController Simulink Model. Lines 17-23 get the object handles of the 2 servo joints, as well as the ball, before retrieving the coordinates of the ball with the simxGetObjectPosition() function. These coordinates are then fed into the ball posiiton controller in lines 28-31. In lines 34-37, the matlab code is recieving the data from the simulink models output blocks X and Y. These new x and y values are then fed back into the coppelia sim model with the simxSetJointTargetPosition() function.
 
-## 5. Simulink
+## 4. Simulink
 Using the proporional and derivative gains solved in section 2, A simulink model was constructed to accurately control the Ball and Plate system. This model can be seen below.
 
 ![image](https://user-images.githubusercontent.com/73966901/102729264-df398e80-42e4-11eb-9442-d4bfe9b1ba21.png)
@@ -98,16 +95,16 @@ Figure_: Simulink Model of Ball Position controller
 
 This model feeds information of the balls x and y coordinates in the coppeliasim simulation from Matlab into ConstantX and ConstantY respectively. The output blocks X and Y are then recieved in matlab to be fed into the coppeliasim model to set the new joint postions of the X and Y axis servo joints. 
 
-## 6. CoppeliaSim Model
+## 5. CoppeliaSim Model
 The following image shows the provided CoppeliSim Model to test our control system.
 ![image](https://user-images.githubusercontent.com/73966901/102730782-adc3c180-42ea-11eb-98c4-9697a727820b.png)
 Figure_: CoppeliaSim Model
 
 
-## 7. Conclusion
+## 6. Conclusion
 Our team was very close to producing a working system, however there was one small error within our BallPosController model that we were unable to understand. The video seen in the repository shows that we were able to interact with the system and that the system responds to the location of the ball, but also demonstrates that something is wrong with the system. After displaying the information imported and exported from the simulink model, it was clear that the issue is within the controller. If time permitted we would be able to refine the controller to ensure a responsive system that facilitates the defined system parameters.
 
-## 8. References
+## 7. References
 [1] Nise, Norman S. Control Systems Engineering. Hoboken, NJ: Wiley, 2015. 
 
 [2] Quanser inc. 2 DOF Ball Balancer Woorkbook, 2013.
