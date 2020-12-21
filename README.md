@@ -99,7 +99,7 @@ Mathematical model:
 **Figure 9:** Control block y
 
 
-This is the block diagram corresponding to one axis of our two degrees of freedom ball balancer system. This specific diagram has two loops, the inner loop on the right represents the model of the servo Ps(s), and the ball balancer model. The outer loop on the left is representing the position controller S. The position controller is to be implemented in Simulink and the servo controls and ball balancer models are to be implemented into coppeliasim. 
+These the block diagrams are each corresponding to one axis of our two degrees of freedom ball balancer system. Each specific diagram has two loops, the inner loop on the right represents the model of the servo Ps(s), and the ball balancer model Pbb(s). The outer loop on the left is representing the position controller. The position controller is to be implemented in Simulink and the servo controls and ball balancer models are to be implemented into coppeliasim. 
 
 
 ![image](https://user-images.githubusercontent.com/76408602/102729527-ed3bdf00-42e5-11eb-89cf-39afe674f531.png)
@@ -110,7 +110,7 @@ This is the block diagram corresponding to one axis of our two degrees of freedo
 
 **Figure 11:** Y-Axis Closed loop Transfer Function
 
-The equations above represent our block diagram respectively for one axis of the 2 degree of freedom ball balancer. It follows the format of a standard second-order system therefore we can go ahead and solve for our proportional gain KP and derivative gain KD using our system parameters of percent overshoot, and settling time. shown in **Fig 12** and **Fig 13**
+The equations above represent our block diagram respectively for each axis of the 2 degree of freedom ball balancer. It follows the format of a standard second-order system therefore the proportional gain KP and derivative gain KD can be solved using the system parameters of percent overshoot, and settling time shown below in **Fig 12** and **Fig 13**
 
 ![image](https://user-images.githubusercontent.com/76408602/102739960-63027380-4303-11eb-85cb-0ae19d9d9d41.png)
 
@@ -120,7 +120,7 @@ The equations above represent our block diagram respectively for one axis of the
 
 **Figure 13:** Settling Time Formula
 
-In the overall system, the same transfer function shown in **Fig 10** and **Fig11** will be implemented for the second axis of the 2 degree of freedom ball balancer system. This is a workaround to create a MIMO system by combining multiple SISO systems. One of the diagrams will be for the X-axis, and the other will be for the Y-axis. Therefore the mathematical model for the entire system will be encompassed by both of these equations. 
+In the overall system, the transfer function shown in **Fig11** will be implemented for the second axis of the 2 degree of freedom ball balancer system. This is a workaround to create a Multi-Input-Multi-Output (MIMO) system by combining multiple Single-Input-Single-Output (SISO) systems. One of the diagrams represents the X-axis, and the other represents the Y-axis. Therefore the mathematical model for the entire system will be encompassed by both of these equations. 
 
 
 	The mathematics for our project can be described by the inherent mathematical equation relating to a PID controller. This equation is seen below. 
@@ -128,21 +128,21 @@ In the overall system, the same transfer function shown in **Fig 10** and **Fig1
 
 **Figure 14:** Inherent Mathematical Equation of a PID Controller
 
-Where KP is the proportional gain, Ki is the integral gain, and K is the derivative gain. This specific system is replicated by a PD controller, meaning Ki is equal to zero. 
+Where KP is the proportional gain, Ki is the integral gain, and Kd is the derivative gain. This specific system is replicated by a PD controller, meaning Ki is equal to zero. 
 
 
 ![image](https://user-images.githubusercontent.com/73966901/102728961-64bc3f00-42e3-11eb-9743-f7b5b8ce53a8.png)
 
 **Figure 15:** Excel Spreadsheet including system requirements and dreived values.
 
-The System Requirements of this project were defined by investigating appropriate parameters for this type of system. After discussing as a group, For our system, we’re using a 10% overshoot, with a 4% settling time of 5 seconds, and a Steady-State error of  7.5mm. The image above shows the excel sheet that was made to solve for our dampening ratio, natural frequency, as well as our proportional and derivative gains.
+The System Requirements of this project were defined by investigating appropriate parameters for this type of system. The system was designed to incorporate a 10% overshoot, a 4% settling time of 5 seconds, and a Steady-State error of  7.5mm. The image above shows the excel sheet that was made to solve for our dampening ratio, natural frequency, as well as our proportional and derivative gains.
 
 ## 3. Matlab
 ![image](https://user-images.githubusercontent.com/73966901/102730315-2b86cd80-42e9-11eb-8d13-1e664e79a659.png)
 ![image](https://user-images.githubusercontent.com/73966901/102730483-cda6b580-42e9-11eb-847c-a11167338003.png)
 **Figure 16:** Matlab Code for BallNPlate System
 
-For this system, the ball position controllers were implimented in simulink for each axis of the system, and the servo model and potential controller was utilized in coppeliasim. Matlab acted as the commuinication tool for this system, as it needed to pull information from coppeliasim, as well as feed and retrieve information to and from simulink in order for the system to work in harmony. Lines 1-6 show the remote connection to the coppeliasim model through remoteApi. Line 12 starts the BallPosController Simulink Model. Lines 17-23 get the object handles of the 2 servo joints, as well as the ball, before retrieving the coordinates of the ball with the simxGetObjectPosition() function. These coordinates are then fed into the ball posiiton controller in lines 28-31. In lines 34-37, the matlab code is recieving the data from the simulink models output blocks X and Y. These new x and y values are then fed back into the coppelia sim model with the simxSetJointTargetPosition() function.
+For this system, the ball position controllers were implimented in simulink for each axis of the system, and the servo model and potential controller was utilized in coppeliasim. Matlab acted as the commuinication tool for this system, as it needed to pull information from coppeliasim, as well as feed and retrieve information to and from simulink in order for the system to work in harmony. Lines 1-6 show the remote connection to the coppeliasim model through the remoteApi application extension. Line 12 starts the BallPosController Simulink Model. Lines 17-23 get the object handles of the 2 servo joints, as well as the ball, before retrieving the coordinates of the ball with the simxGetObjectPosition() function. These coordinates are then fed into the ball posiiton controller in lines 28-31. In lines 34-37, the matlab code is recieving the data from the simulink models output blocks X and Y. These new x and y values are then fed back into the coppelia sim model with the simxSetJointTargetPosition() function.
 
 ## 4. Simulink
 Using the proporional and derivative gains solved in section 2, A simulink model was constructed to accurately control the Ball and Plate system. This model can be seen below.
@@ -150,7 +150,7 @@ Using the proporional and derivative gains solved in section 2, A simulink model
 ![image](https://user-images.githubusercontent.com/73966901/102729264-df398e80-42e4-11eb-9442-d4bfe9b1ba21.png)
 **Figure 15:** Simulink Model of Ball Position controller
 
-This model feeds information of the balls x and y coordinates in the coppeliasim simulation from Matlab into ConstantX and ConstantY respectively. The output blocks X and Y are then recieved in matlab to be fed into the coppeliasim model to set the new joint postions of the X and Y axis servo joints. 
+This model feeds information of the balls x and y coordinates in the coppeliasim simulation from Matlab into ConstantX and ConstantY respectively. The output blocks X and Y are then recieved in matlab to be fed into the coppeliasim model to set the new target joint postions of the X and Y axis servo joints. 
 
 ## 5. CoppeliaSim Model
 The following image shows the provided CoppeliSim Model to test our control system.
