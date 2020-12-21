@@ -37,34 +37,42 @@ Figure 1: One dimensional Ball and Plate System[1]
 
 Using **Fig. 1** we can find the relationship between the servo load gear angle theta(L), as well as the correlation between the beam and the angle of the servo.
  
+ 
  ![image](https://user-images.githubusercontent.com/73966901/102739756-d9eb3c80-4302-11eb-93e4-1777f0b536a4.png)
  
  **Figure 2:** Sine of the beam angle. 
+ 
  
  ![image](https://user-images.githubusercontent.com/73966901/102739849-174fca00-4303-11eb-9324-a4479c42e1b7.png)
  
  **Figure 3:** Sine of the Beam and Servo Angle
  
+ 
  **Fig. 2** and **Fig. 3** are then used to obtain the equation depicted in **Fig. 4.**
+ 
  
  ![image](https://user-images.githubusercontent.com/73966901/102739897-30f11180-4303-11eb-9709-94ce0838d4e6.png)
  
- 
  **Figure 4:** Relationship between the beam and servo angle.
+ 
+ 
+ Assuming the servo angle is zero to linearize the equation of motion, we can then incorporate this equation into **Fig. 5**, the equation of linear acceleration of the ball and beam system.
+ 
  
  ![image](https://user-images.githubusercontent.com/73966901/102741108-53d0f500-4306-11eb-9c5e-258060bcf4ef.png)
  
- Figure_:
+ **Figure 5:** Equation of Linear Acceleration of the Ball and Beam System
  
-![image](https://user-images.githubusercontent.com/73966901/102739911-3cdcd380-4303-11eb-92c6-8e4986ebc520.png)
+ If we assume a small angle approximation in **Fig. 5** we can produce the linear equation of motion of the ball
+ 
+ ![image](https://user-images.githubusercontent.com/73966901/102739911-3cdcd380-4303-11eb-92c6-8e4986ebc520.png)
+ 
+ **Figure 6:** Linear Equation of Motion of the Ball
 
-Assuming that the servo angle equals zero, we can 
- **Figure 5:** Ball Equation of motion
- 
+
  ![image](https://user-images.githubusercontent.com/73966901/102739922-45350e80-4303-11eb-96bb-79eec8ef5819.png)
-
  
- Figure 6: Linearized Ball EOM
+ **Figure 7:** Linearized Ball EOM
 
  
 The goal was to design a control system that allows the user to put a ball anywhere on the plate and have the servo motors 
