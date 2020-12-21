@@ -37,6 +37,7 @@ position the ball in the center of the plate.
 
 ## 2. System Requirements
 ![image](https://user-images.githubusercontent.com/73966901/102728961-64bc3f00-42e3-11eb-9743-f7b5b8ce53a8.png)
+Figure 1: Excel Spreadsheet including system requirements and dreived values.
 
 The System Requirements of this project were defined by investigating appropriate parameters for this type of system. After discussing as a group, we decided to impliment our system with a 10% response overshoot, and a 5 second settling time. The image above shows the excel sheet that was made to solve for our dampening ratio, natural frequency, as well as our proportional and derivative gains.
 
@@ -54,9 +55,6 @@ This is the block diagram corresponding to one axis of our 2 degrees of freedom 
 
 Insert Equations
 
-![image](https://user-images.githubusercontent.com/76408602/102729527-ed3bdf00-42e5-11eb-89cf-39afe674f531.png)
-
-![image](https://user-images.githubusercontent.com/76408602/102729539-f7f67400-42e5-11eb-8e89-4ab8fc3016d7.png)
 
 
 The equations above represent our block diagram respectively for one axis of the 2 degree of freedom ball balancer. It follows the format of a standard second-order system therefore we can go ahead and solve for our proportional gain KP and derivative gain KD using our system parameters of percent overshoot, and settling time. For our system, we’re using a 10% overshoot, with a 4% settling time of 5 seconds, and a Steady-State error of  7.5mm.
@@ -71,8 +69,12 @@ Where KP is the proportional gain, Kiis the integral gain, and K is the derivati
 
 
 ## 4. Simulink
+Using the proporional and derivative gains solved in section 2, A simulink model was constructed to accurately control the Ball and Plate system. This model can be seen below.
 
-The Simulink Model created ....
+![image](https://user-images.githubusercontent.com/73966901/102729264-df398e80-42e4-11eb-9442-d4bfe9b1ba21.png)
+Figure_: Simulink Model of Ball Position controller
+
+This model feeds information of the balls x and y coordinates in the coppeliasim simulation from Matlab into ConstantX and ConstantY respectively. The output blocks X and Y are then recieved in matlab to be fed into the coppeliasim model to set the new joint postions of the X and Y axis servo joints. 
 
 ## 5. Coppelia Simulation
 
