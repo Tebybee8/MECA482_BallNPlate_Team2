@@ -24,8 +24,8 @@ Ball N Plate Control System Design
 - [3. Mathematical Model](#3-Mathematical-Model) 
 - [4. Matlab](#4-Matlab)
 - [5. Simulink](#5-Simulink) 
-- [6. Coppelia Simulation](#6-Coppelia-Simulation)
-- [7. Appendix](#7-Appendix)
+- [6. CoppeliaSim Model](#6-CoppeliaSim Model)
+- [7. Conclusion](#7-Conclusion)
 - [8. References](#8-References)
 
 ## 1. Introduction 
@@ -86,15 +86,14 @@ Figure_: Simulink Model of Ball Position controller
 
 This model feeds information of the balls x and y coordinates in the coppeliasim simulation from Matlab into ConstantX and ConstantY respectively. The output blocks X and Y are then recieved in matlab to be fed into the coppeliasim model to set the new joint postions of the X and Y axis servo joints. 
 
-## 6. Coppelia Simulation
+## 6. CoppeliaSim Model
+The following image shows the provided CoppeliSim Model to test our control system.
+![image](https://user-images.githubusercontent.com/73966901/102730782-adc3c180-42ea-11eb-98c4-9697a727820b.png)
+Figure_: CoppeliaSim Model
 
-The Coppelia Simulation which proves that our algorithms facilitate the designated system requirements...
 
-## 7. Appendix 
+## 7. Conclusion
 
-A1:
-
-A2:
 
 ## 8. References
 [1] Nise, Norman S. Control Systems Engineering. Hoboken, NJ: Wiley, 2015. 
