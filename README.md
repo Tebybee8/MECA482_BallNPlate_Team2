@@ -52,7 +52,7 @@ Using **Fig. 1** we can find the relationship between the servo load gear angle 
  
  **Figure 4:** Relationship between the beam and servo angle.
  
- ![image](https://user-images.githubusercontent.com/76408602/102740983-fccb2000-4305-11eb-9ed1-26c85e65d11a.png)
+ ![image](https://user-images.githubusercontent.com/73966901/102741108-53d0f500-4306-11eb-9c5e-258060bcf4ef.png)
  
  Figure_:
  
