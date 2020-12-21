@@ -94,7 +94,7 @@ The equations above represent our block diagram respectively for one axis of the
 
 Figure 11: Percent Overshoot Formula
 
-![image](https://user-images.githubusercontent.com/76408602/102739914-3d756a00-4303-11eb-93d4-f6d4d12dca5e.png)
+![image](https://user-images.githubusercontent.com/76408602/102740280-47e43380-4304-11eb-9958-e90c07c49e35.png)
 
 Figure 12: Settling Time Formula
 
