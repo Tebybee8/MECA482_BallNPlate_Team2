@@ -44,8 +44,9 @@ The System Requirements of this project were defined by investigating appropriat
 
 Mathematical model:
 
-
 Insert Photos
+![X axis](https://user-images.githubusercontent.com/76408602/102729104-1b202400-42e4-11eb-9c73-f05f5cec7f3b.png)
+![Y axis](https://user-images.githubusercontent.com/76408602/102729117-2d9a5d80-42e4-11eb-8864-e108e4da781a.png)
 
 
 
