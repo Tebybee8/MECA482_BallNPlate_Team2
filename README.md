@@ -62,7 +62,7 @@ Figure 2: Control block x
 Figure 3: Control block y
 
 
-This is the block diagram corresponding to one axis of our 2 degrees of freedom ball balancer system. This specific diagram has two loops, the inner loop on the right represents the model of the servo Ps(s), and the ball balancer model. The outer loop on the left is representing the position controller S. The position controller is to be implemented in Simulink and the servo controls and ball balancer models are to be implemented into coppeliasim.
+This is the block diagram corresponding to one axis of our two degrees of freedom ball balancer system. This specific diagram has two loops, the inner loop on the right represents the model of the servo Ps(s), and the ball balancer model. The outer loop on the left is representing the position controller S. The position controller is to be implemented in Simulink and the servo controls and ball balancer models are to be implemented into coppeliasim. 
 
 
 ![image](https://user-images.githubusercontent.com/76408602/102729527-ed3bdf00-42e5-11eb-89cf-39afe674f531.png)
