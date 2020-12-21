@@ -38,13 +38,10 @@ Figure 1: One dimensional Ball and Plate System[1]
 Using Figure 1 we can find the relationship between the servo load gear angle theta(L).
  
  ![image](https://user-images.githubusercontent.com/73966901/102739756-d9eb3c80-4302-11eb-93e4-1777f0b536a4.png)
- 
  Figure 2: Sine of the servo load shaft 
  
- ![image](https://user-images.githubusercontent.com/73966901/102739849-174fca00-4303-11eb-9324-a4479c42e1b7.png)
- 
- 
- Figure 3: ? will revisit 
+ ![image](https://user-images.githubusercontent.com/73966901/102739849-174fca00-4303-11eb-9324-a4479c42e1b7.png) 
+ Figure 3: Sin 
  
  Figure 2 and Figure 3 are ustilized to obtain the equation depicted in Figure 4.
  
