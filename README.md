@@ -94,6 +94,7 @@ Figure 10:
 
 The equations above represent our block diagram respectively for one axis of the 2 degree of freedom ball balancer. It follows the format of a standard second-order system therefore we can go ahead and solve for our proportional gain KP and derivative gain KD using our system parameters of percent overshoot, and settling time.
 
+	
 ![image](https://user-images.githubusercontent.com/76408602/102739960-63027380-4303-11eb-85cb-0ae19d9d9d41.png)
 
 Figure 11: Percent Overshoot Formula
@@ -101,6 +102,7 @@ Figure 11: Percent Overshoot Formula
 ![image](https://user-images.githubusercontent.com/76408602/102739914-3d756a00-4303-11eb-93d4-f6d4d12dca5e.png)
 
 Figure 12: Settling Time Formula
+
 
 In the overall system, the same transfer function will be implemented for the second axis of the 2 degree of freedom ball balancer system. This is a workaround to create a MIMO system by combining multiple SISO systems. One of the diagrams will be for the X-axis, and the other will be for the Y-axis. Therefore the mathematical model for the entire system will be encompassed by both of these equations. 
 
